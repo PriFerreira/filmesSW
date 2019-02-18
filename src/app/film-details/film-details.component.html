@@ -1,0 +1,53 @@
+<section *ngIf="film">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="list-group" role="tablist">
+            <div class="list-group-item list-group-item-action name-film">
+              {{film.title}}
+            </div>
+            <a class="list-group-item list-group-item-action" 
+                id="list-home-list" data-toggle="list" href="#list-home" 
+                role="tab" aria-controls="home">
+                <strong>Title: </strong> {{film.title}}
+            </a>
+            <a class="list-group-item list-group-item-action" 
+              id="list-profile-list" data-toggle="list" href="#list-profile" 
+              role="tab" aria-controls="profile">
+              <strong>Episode: </strong> {{film.episode}} 
+            </a>
+            <a class="list-group-item list-group-item-action" 
+              id="list-messages-list" data-toggle="list" href="#list-messages" 
+              role="tab" aria-controls="messages">
+              <strong>Opening Crawl: </strong> {{film.opening_crawl}}
+            </a>
+            <a class="list-group-item list-group-item-action" 
+              id="list-settings-list" data-toggle="list" href="#list-settings" 
+              role="tab" aria-controls="settings">
+              <strong>Director: </strong>  {{film.director}}
+            </a>
+            <a class="list-group-item list-group-item-action" 
+              id="list-settings-list" data-toggle="list" href="#list-settings" 
+              role="tab" aria-controls="settings">
+              <strong>Producer: </strong> {{film.producer}}
+            </a>
+            <a class="list-group-item list-group-item-action" 
+              id="list-settings-list" data-toggle="list" href="#list-settings" 
+              role="tab" aria-controls="settings">
+              <strong>Release Date: </strong> {{film.release_date}}
+            </a>
+            <a class="list-group-item list-group-item-action" 
+              id="list-settings-list" data-toggle="list" href="#list-settings" 
+              role="tab" aria-controls="settings">
+              <strong>Characters: </strong>  {{film.characters}}  
+            </a>
+            <a class="list-group-item list-group-item-action" >
+              <button type="button" class="btn btn-darksw" (click)="gotoFilmsList()">Back to films list</button> 
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section>

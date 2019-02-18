@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+.list-group{
+    top: 10rem;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+}
+.name-film {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    color: yellow;
+    background: #333;
+}
+.btn-darksw {
+    background-color: #333;
+    color: #fffff2;
+}
+.btn-darksw:hover,
+.btn-darksw:active,
+.btn-darksw:focus {
+    background-color: #333;
+    color: yellow;
+    outline-color: #000;
+}
+.list-group-item.list-group-item-action {
+    white-space: normal;
+    word-wrap: break-word
+}
+ul li {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 480px) {
+    .name-film {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .name-film {
+        font-size: 20px;
+    }
+}
